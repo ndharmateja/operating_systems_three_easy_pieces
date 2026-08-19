@@ -33,7 +33,6 @@ void run_linked_list_code()
         printf("Error creating linked_list.");
         return;
     }
-    printf("Linked list created.");
 
     print_linked_list(l);
     for (int i = 0; i < 10; i++)
