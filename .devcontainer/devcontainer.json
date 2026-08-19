@@ -1,5 +1,5 @@
 {
-    "name": "TLPI-Systems-Development",
+    "name": "OSTEP",
     "build": {
         "dockerfile": "Dockerfile"
     },
