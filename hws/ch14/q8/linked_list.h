@@ -47,7 +47,7 @@ void print_linked_list(linked_list *l)
 {
     if (!l->size)
     {
-        printf("<empty list>");
+        printf("<empty list>\n");
         return;
     }
 
