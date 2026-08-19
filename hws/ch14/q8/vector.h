@@ -13,7 +13,7 @@ static int check_and_increase_capacity(vector *v)
     if (v->size < v->capacity)
         return 0;
     v->capacity *= 2;
-    v->data = (int *)realloc(v->data, v->capacity);
+    v->data = (int *)realloc(v->data, sizeof(int) * v->capacity);
 
     // Check if realloc failed
     if (!v->data)
@@ -37,7 +37,7 @@ vector *create_vector()
 
     v->size = 0;
     v->capacity = 4;
-    v->data = (int *)malloc(4 * v->capacity);
+    v->data = (int *)malloc(sizeof(int) * v->capacity);
     if (!v->data)
     {
         free(v);
